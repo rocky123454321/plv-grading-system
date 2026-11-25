@@ -4,6 +4,27 @@
 
 A React web app that decides whether students passed or earned honors, groups them into sets, and models their subject enrollment as a relation. Every result on screen is computed by Discrete Mathematics code in `src/lib/`.
 
+## Group members
+
+- C Josh Mondragón
+- John Richmond
+- Mark Daniel Padilla (Group creator)
+- Rocky Jay Ducusin
+- Tristan Ronald Blas
+
+## Get the code
+
+Source code: https://github.com/rocky123454321/plv-grading-system
+
+```bash
+git clone https://github.com/rocky123454321/plv-grading-system.git
+cd plv-grading-system
+npm install
+npm run dev
+```
+
+No Git? On the GitHub page, click **Code → Download ZIP**, extract it, open the folder in a terminal, then run `npm install` and `npm run dev`. You need Node.js installed first.
+
 ## Objectives and users
 
 - Show how propositional logic, set theory and relations solve a real grading problem.

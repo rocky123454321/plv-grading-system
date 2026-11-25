@@ -106,7 +106,7 @@ export default function GroupPage({ onNavigate }) {
         <div className="bottom">
           <div className="concepts">
             <div className="label">Concepts used</div>
-            <span className="chip" style={{ "--c": "#ff1f2d" }}>Logic</span>
+            <span className="chip" style={{ "--c": "#2563eb" }}>Logic</span>
             <span className="chip" style={{ "--c": "#3ddc84" }}>Sets</span>
             <span className="chip" style={{ "--c": "#a855f7" }}>Relations</span>
           </div>

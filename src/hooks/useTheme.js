@@ -3,7 +3,7 @@ import { STORAGE_KEYS } from "../data/constants";
 
 export function useTheme() {
   const [theme, setTheme] = useState(
-    () => document.documentElement.getAttribute("data-theme") || "dark"
+    () => document.documentElement.getAttribute("data-theme") || "light"
   );
 
   useEffect(() => {

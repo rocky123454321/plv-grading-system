@@ -1,19 +1,35 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   background: var(--bg);
+  background-image: var(--sky);
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--body);
   line-height: 1.5;
   transition: background 0.3s, color 0.3s;
 }
-body.loading { overflow: hidden; }
 
-h1, h2, h3 { margin: 0; }
-a { color: inherit; text-decoration: none; }
+body.loading {
+  overflow: hidden;
+}
 
-input, select {
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+select {
   font: inherit;
   padding: 8px 11px;
   border: 1px solid var(--line);
@@ -21,28 +37,97 @@ input, select {
   background: var(--input);
   color: var(--text);
 }
-select option { background: var(--panel); }
-input[type="number"] { width: 78px; }
-input[type="checkbox"] { accent-color: var(--red); width: auto; }
 
-button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
-  outline: 3px solid var(--red);
+select option {
+  background: var(--panel);
+}
+
+input[type="number"] {
+  width: 78px;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--accent);
+  width: auto;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--accent);
   outline-offset: 2px;
 }
 
-code { background: var(--chip); padding: 1px 7px; border-radius: 4px; }
-
-.sr-only {
-  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
-  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+code {
+  background: var(--chip);
+  padding: 1px 7px;
+  border-radius: 4px;
 }
 
-@keyframes spin { to { transform: rotate(360deg); } }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-@keyframes slideIn { from { opacity: 0; transform: translateY(45px) skewX(-8deg); } to { opacity: 1; transform: none; } }
-@keyframes pop { from { opacity: 0; transform: scale(0.55) rotate(-25deg); } to { opacity: 1; transform: none; } }
-@keyframes bob { 50% { transform: translate(-50%, -50%) translateY(-14px); } }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(45px) skewX(-8deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.55) rotate(-25deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes bob {
+  50% {
+    transform: translate(-50%, -50%) translateY(-14px);
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
-  * { animation: none !important; transition: none !important; }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }

@@ -26,7 +26,7 @@ export default function VennDiagram({ X, Y, nameX, nameY, operation }) {
   const onlyX = difference(X, Y);
   const onlyY = difference(Y, X);
 
-  const accent = "var(--red)";
+  const accent = "var(--accent)";
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} className="venn" role="img"

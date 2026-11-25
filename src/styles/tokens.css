@@ -1,49 +1,67 @@
+/* Default theme: sky blue (light). Dark theme below keeps the same blue accent. */
 :root {
   --display: "Unbounded", "Arial Black", Impact, sans-serif;
   --body: "Figtree", "Segoe UI", system-ui, sans-serif;
 
-  --bg: #0b0b0c;
-  --panel: #141416;
-  --soft: #1c1c1f;
-  --line: #2c2c31;
-  --text: #f3f3f3;
-  --muted: #9a9aa3;
-  --red: #ff1f2d;
-  --green: #3ddc84;
-  --bad: #ff5560;
-  --gold: #f5b83d;
-  --input: #0f0f10;
-  --chip: #26262b;
-  --hover: #19191c;
-  --dot: #555;
-  --stage: radial-gradient(circle at 50% 45%, #1d1d21 0%, #0b0b0c 65%);
-  --ghost: rgba(255, 255, 255, 0.04);
-  --glyph-start: #ffffff;
-  --good-bg: rgba(61, 220, 132, 0.15);
-  --bad-bg: rgba(255, 31, 45, 0.16);
-  --gold-bg: rgba(245, 184, 61, 0.16);
-  color-scheme: dark;
-}
+  --accent: #2563eb;
+  --accent-bg: rgba(37, 99, 235, 0.12);
 
-:root[data-theme="light"] {
-  --bg: #f4f4f6;
-  --panel: #ffffff;
-  --soft: #f0f0f3;
-  --line: #d9d9e0;
-  --text: #111114;
-  --muted: #666672;
+  --bg: #dbeafe;
+  --sky:
+    radial-gradient(55% 38% at 18% 10%, rgba(255, 255, 255, 0.95), transparent 70%),
+    radial-gradient(45% 32% at 84% 18%, rgba(255, 255, 255, 0.8), transparent 70%),
+    radial-gradient(70% 38% at 40% 105%, rgba(255, 255, 255, 0.95), transparent 70%),
+    linear-gradient(180deg, #b6d3ff 0%, #d6e6ff 55%, #eef5ff 100%);
+  --nav: rgba(255, 255, 255, 0.92);
+  --nav-shadow: 0 8px 30px rgba(30, 64, 140, 0.16);
+  --panel: rgba(255, 255, 255, 0.9);
+  --soft: #eef4ff;
+  --line: #d5e0f5;
+  --text: #0f1a35;
+  --muted: #5b6b8c;
   --green: #168a4c;
   --bad: #d6212f;
   --gold: #a66b00;
   --input: #ffffff;
-  --chip: #e8e8ee;
-  --hover: #f6f6f9;
-  --dot: #bbbbc4;
-  --stage: radial-gradient(circle at 50% 45%, #ffffff 0%, #f4f4f6 65%);
-  --ghost: rgba(0, 0, 0, 0.05);
-  --glyph-start: #111114;
+  --chip: #e6eefc;
+  --hover: #f3f7ff;
+  --dot: #b4c3e0;
+  --stage: transparent;
+  --ghost: rgba(255, 255, 255, 0.6);
+  --glyph-start: #0f1a35;
   --good-bg: rgba(22, 138, 76, 0.13);
   --bad-bg: rgba(214, 33, 47, 0.12);
   --gold-bg: rgba(166, 107, 0, 0.14);
   color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --accent: #4f86ff;
+  --accent-bg: rgba(79, 134, 255, 0.16);
+
+  --bg: #0a1226;
+  --sky:
+    radial-gradient(50% 35% at 18% 8%, rgba(79, 134, 255, 0.18), transparent 70%),
+    radial-gradient(45% 30% at 85% 20%, rgba(79, 134, 255, 0.1), transparent 70%),
+    linear-gradient(180deg, #0a1226 0%, #0d1a38 100%);
+  --nav: rgba(16, 26, 50, 0.92);
+  --nav-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  --panel: rgba(17, 26, 46, 0.92);
+  --soft: #16213b;
+  --line: #26365a;
+  --text: #f1f5ff;
+  --muted: #94a3c4;
+  --green: #3ddc84;
+  --bad: #ff5560;
+  --gold: #f5b83d;
+  --input: #0d1730;
+  --chip: #1f2d4d;
+  --hover: #16213b;
+  --dot: #4b5b80;
+  --ghost: rgba(255, 255, 255, 0.05);
+  --glyph-start: #ffffff;
+  --good-bg: rgba(61, 220, 132, 0.15);
+  --bad-bg: rgba(255, 85, 96, 0.16);
+  --gold-bg: rgba(245, 184, 61, 0.16);
+  color-scheme: dark;
 }

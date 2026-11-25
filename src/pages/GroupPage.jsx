@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, Sigma } from "lucide-react";
+import { ArrowRight, Code, Sigma } from "lucide-react";
 import { MEMBERS } from "../data/members";
 import Button from "../components/ui/Button";
 
 const PHONE_WIDTH = 820;
+const SOURCE_CODE_URL = "https://github.com/rocky123454321/plv-grading-system";
 
 /** Scroll-driven member showcase: the scroll position decides which member is on screen. */
 export default function GroupPage({ onNavigate }) {
@@ -117,6 +118,15 @@ export default function GroupPage({ onNavigate }) {
             <Button variant="outline" icon={Sigma} onClick={() => onNavigate("logic")}>
               See logic
             </Button>
+            <a
+              className="btn btn-outline"
+              href={SOURCE_CODE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Code size={16} aria-hidden="true" />
+              Source code
+            </a>
           </div>
           <div className="about">
             <div className="label">About the project</div>

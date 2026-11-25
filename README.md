@@ -8,7 +8,7 @@ A React web app that decides whether students passed or earned honors, groups th
 
 - C Josh Mondragón
 - John Richmond
-- Mark Daniel Padilla (Group creator)
+- Mark Daniel Padilla
 - Rocky Jay Ducusin
 - Tristan Ronald Blas
 

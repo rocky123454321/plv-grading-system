@@ -1,0 +1,49 @@
+:root {
+  --display: "Unbounded", "Arial Black", Impact, sans-serif;
+  --body: "Figtree", "Segoe UI", system-ui, sans-serif;
+
+  --bg: #0b0b0c;
+  --panel: #141416;
+  --soft: #1c1c1f;
+  --line: #2c2c31;
+  --text: #f3f3f3;
+  --muted: #9a9aa3;
+  --red: #ff1f2d;
+  --green: #3ddc84;
+  --bad: #ff5560;
+  --gold: #f5b83d;
+  --input: #0f0f10;
+  --chip: #26262b;
+  --hover: #19191c;
+  --dot: #555;
+  --stage: radial-gradient(circle at 50% 45%, #1d1d21 0%, #0b0b0c 65%);
+  --ghost: rgba(255, 255, 255, 0.04);
+  --glyph-start: #ffffff;
+  --good-bg: rgba(61, 220, 132, 0.15);
+  --bad-bg: rgba(255, 31, 45, 0.16);
+  --gold-bg: rgba(245, 184, 61, 0.16);
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #f4f4f6;
+  --panel: #ffffff;
+  --soft: #f0f0f3;
+  --line: #d9d9e0;
+  --text: #111114;
+  --muted: #666672;
+  --green: #168a4c;
+  --bad: #d6212f;
+  --gold: #a66b00;
+  --input: #ffffff;
+  --chip: #e8e8ee;
+  --hover: #f6f6f9;
+  --dot: #bbbbc4;
+  --stage: radial-gradient(circle at 50% 45%, #ffffff 0%, #f4f4f6 65%);
+  --ghost: rgba(0, 0, 0, 0.05);
+  --glyph-start: #111114;
+  --good-bg: rgba(22, 138, 76, 0.13);
+  --bad-bg: rgba(214, 33, 47, 0.12);
+  --gold-bg: rgba(166, 107, 0, 0.14);
+  color-scheme: light;
+}
